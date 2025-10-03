@@ -7,7 +7,9 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "sass"
+          "inlineTemplate": true,
+          "inlineStyle": true,
+          "style": "scss"
         }
       },
       "root": "",
@@ -26,6 +28,7 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "sass",
             "assets": [
+              "src/assets",
               {
                 "glob": "**/*",
                 "input": "public"
@@ -98,5 +101,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "fde56dc3-69cd-49b1-b5a4-f01b8749a406"
   }
 }
