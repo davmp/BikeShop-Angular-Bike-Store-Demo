@@ -25,7 +25,9 @@ Criado como um projeto de aprendizado para obter experiência prática em Angula
 
 ## 📸 Screenshots
 
-(Adicione imagens ou GIFs aqui mostrando a listagem de produtos, detalhes, carrinho e telas de autenticação.)
+<img width="3415" height="2069" alt="image" src="https://github.com/user-attachments/assets/c4f52fcb-0b13-4f33-a975-83a3cb72cffc" />
+<img width="914" height="1884" alt="image" src="https://github.com/user-attachments/assets/68f702c9-c822-4228-b0d9-17422e0d03b0" />
+<img width="3436" height="2071" alt="image" src="https://github.com/user-attachments/assets/b7bd7027-994d-4c99-a2c6-39ce4542fce4" />
 
 ## 🚀 Como Executar
 
