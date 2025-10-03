@@ -32,13 +32,13 @@ Criado como um projeto de aprendizado para obter experiência prática em Angula
 ### Pré-requisitos
 
 - Node.js 18+
-- npm 9+
+- pnpm 9+
 
 ### Instalação
 
 - `git clone https://github.com/davmp/BikeShop-Angular-Bike-Store-Demo.git`
 - `cd BikeShop-Angular-Bike-Store-Demo`
-- `npm install` ou `pnpm install`
+- `pnpm install`
 
 ### Rodando a Aplicação
 
