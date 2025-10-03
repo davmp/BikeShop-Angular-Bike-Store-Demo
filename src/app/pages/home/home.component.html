@@ -1,0 +1,42 @@
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+  @for (bike of bikeService.bikes(); track bike.id) {
+  <p-card
+    class="relative shadow-xs! border border-slate-200"
+    [attr.data-in-stock]="!!bike.stock"
+  >
+    <ng-template #header>
+      <img
+        src="{{ bike.image }}"
+        alt="{{ bike.name }}"
+        class="w-[300px] h-[200px] object-contain mx-auto"
+      />
+    </ng-template>
+    <ng-template #title> {{ bike.name }} </ng-template>
+    <ng-template #subtitle> {{ "R$" + bike.price }} </ng-template>
+    <ng-template pTemplate="footer">
+      <button
+        pButton
+        type="button"
+        label="Addicionar"
+        icon="pi pi-shopping-cart"
+        style="border: none"
+        class="w-full! sm:w-auto! bg-amber-600! hover:bg-amber-700!"
+        (click)="cartService.addToCart(bike)"
+      ></button>
+    </ng-template>
+    <span
+      class="absolute top-2 right-2 text-sm px-2 py-1 font-semibold"
+      [class]="
+        bike.stock === 1
+          ? 'text-orange-400!'
+          : 'data-[in-stock=false]:text-red-600'
+      "
+      [attr.data-in-stock]="!!bike.stock"
+    >
+      @if (bike.stock) { @if (bike.stock === 1) {
+      <i class="pi pi-exclamation-triangle"></i> 1 restante } @else if
+      (bike.stock > 1) { {{ bike.stock }} restantes} }@else { Esgotado }
+    </span>
+  </p-card>
+  }
+</div>

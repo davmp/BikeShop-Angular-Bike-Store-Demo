@@ -1,0 +1,47 @@
+<main class="min-h-screen">
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+    @for (bike of bikes; track bike.id) {
+    <p-card
+      class="relative shadow-xs! border border-slate-200"
+      [attr.data-in-stock]="!!bike.stock"
+    >
+      <ng-template #header>
+        <img
+          src="{{ bike.image }}"
+          alt="{{ bike.name }}"
+          class="w-[300px] h-[200px] object-contain mx-auto"
+        />
+      </ng-template>
+      <ng-template #title> {{ bike.name }} </ng-template>
+      <ng-template #subtitle> {{ "R$" + bike.price }} </ng-template>
+      @if (cartService.getAmountOf(bike.id) > 1) {
+      <div class="mt-2">Quantidade: {{ cartService.getAmountOf(bike.id) }}</div>
+      }
+      <button
+        pButton
+        type="button"
+        icon="pi pi-trash"
+        style="border: none"
+        class="absolute! top-2 right-2 bg-red-700! hover:bg-amber-700!"
+        (click)="cartService.removeFromCart(bike.id)"
+      ></button>
+    </p-card>
+    }
+  </div>
+  @if (cartService.total) {
+  <app-order-summary />
+  } @else {
+  <div class="flex flex-col items-center mx-auto text-2xl mt-20 font-semibold">
+    <i class="pi pi-shopping-cart"></i>
+    Seu carrinho está vazio
+    <button
+      pButton
+      icon="pi pi-arrow-left"
+      label="Continuar comprando"
+      routerLink="/"
+      style="border: none"
+      class="mt-4 sm:w-fit! bg-amber-600! hover:bg-amber-700!"
+    ></button>
+  </div>
+  }
+</main>
