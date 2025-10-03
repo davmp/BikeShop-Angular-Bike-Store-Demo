@@ -37,7 +37,7 @@ Criado como um projeto de aprendizado para obter experiência prática em Angula
 ### Instalação
 
 - `git clone https://github.com/davmp/BikeShop-Angular-Bike-Store-Demo.git`
-- `cd BikeShop-Angular-Bike-Storage-Demo`
+- `cd BikeShop-Angular-Bike-Store-Demo`
 - `npm install` ou `pnpm install`
 
 ### Rodando a Aplicação
