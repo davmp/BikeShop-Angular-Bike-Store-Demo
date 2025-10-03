@@ -1,59 +1,47 @@
-# AngularEcommerce
+# BikeShop – Projeto Demo em Angular 🚴‍♂️
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.17.
+Aplicação web responsiva para uma loja fictícia de bicicletas, construída com Angular. Este projeto demonstra os conceitos principais do Angular, estrutura de código limpa e uso prático de funcionalidades reais necessárias para o desenvolvimento frontend profissional.
 
-## Development server
+## 🚩 Motivação do Projeto
 
-To start a local development server, run:
+Criado como um projeto de aprendizado para obter experiência prática em Angular — incluindo roteamento, gerenciamento de estado, controle de formulários, injeção de dependência e comunicação HTTP. Pensado como um portfólio para futuras oportunidades profissionais.
 
-```bash
-ng serve
-```
+## ✨ Funcionalidades
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- Navegação e filtros no catálogo de bicicletas
+- Páginas detalhadas de produtos
+- Adicionar/remover bicicletas do carrinho de compras
+- Fluxo de cadastro e autenticação de usuários
+- Formulários reativos com validação
+- Layout responsivo para desktop e mobile
+- Componentes e serviços limpos e modulares
+- Mock de backend para demonstração
 
-## Code scaffolding
+## 🛠️ Tecnologias Utilizadas
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- **Framework:** Angular 17+
+- **Estilização:** Tailwind, PrimeNG, SASS, Flex Layout
+- **Gerenciamento de Estado:** RxJS e Services internos
 
-```bash
-ng generate component component-name
-```
+## 📸 Screenshots
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+(Adicione imagens ou GIFs aqui mostrando a listagem de produtos, detalhes, carrinho e telas de autenticação.)
 
-```bash
-ng generate --help
-```
+## 🚀 Como Executar
 
-## Building
+### Pré-requisitos
 
-To build the project run:
+- Node.js 18+
+- npm 9+
 
-```bash
-ng build
-```
+### Instalação
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+- `git clone https://github.com/davmp/BikeShop-Angular-Bike-Store-Demo.git`
+- `cd BikeShop-Angular-Bike-Storage-Demo`
+- `npm install` ou `pnpm install`
 
-## Running unit tests
+### Rodando a Aplicação
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+- `ng serve` ou `pnpm start`
 
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Acesse [http://localhost:4200](http://localhost:4200).
